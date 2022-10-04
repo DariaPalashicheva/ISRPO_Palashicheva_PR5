@@ -5,16 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO_Palashicheva_PR5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Меню" Height="450" Width="800">
     <Grid>
         <Menu Height="25" VerticalAlignment="Top">
-            <MenuItem Header="File">
-                <MenuItem Header="Загрузить картинку" ></MenuItem>
-                <Separator />
-                <MenuItem Header="Exit" ></MenuItem>
+            <MenuItem Header="Файл">
+                <MenuItem Header="Загрузить картинку" Click="OpenD_Click"></MenuItem>
+                <Separator/>
+                <MenuItem Header="Выйти" ></MenuItem>
             </MenuItem>
-            <MenuItem Header="Edit" ></MenuItem>
-            <MenuItem Header="View" ></MenuItem>
+            <MenuItem Header="Рисунки" >
+                <MenuItem Header="Котик 1" Click="cat1_Click"></MenuItem>
+                <MenuItem Header="Котик 2" Click="cat2_Click"></MenuItem>
+                <MenuItem Header="Котик 3" ></MenuItem>
+            </MenuItem>
         </Menu>
+        <Border x:Name="Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="389" Margin="0,30,0,0" VerticalAlignment="Top" Width="792">
+            <Image x:Name="img1" Stretch="Uniform"/>
+        </Border>
+
     </Grid>
 </Window>
