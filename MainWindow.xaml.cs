@@ -38,6 +38,11 @@ namespace ISRPO_Palashicheva_PR5
             img1.Source = new BitmapImage(new Uri("Resources/kotcosmos.jpg", UriKind.Relative));
         }
 
+        private void cat3_Click(object sender, RoutedEventArgs e)
+        {
+            img1.Source = new BitmapImage(new Uri("Resources/кот.jpg", UriKind.Relative));
+        }
+
         private void OpenD_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
@@ -48,6 +53,11 @@ namespace ISRPO_Palashicheva_PR5
                 string fileName = fileDialog.FileName;
                 img1.Source = new BitmapImage(new Uri(fileName));
             }
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

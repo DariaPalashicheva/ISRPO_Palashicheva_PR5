@@ -7,16 +7,28 @@
         mc:Ignorable="d"
         Title="Меню" Height="450" Width="800">
     <Grid>
-        <Menu Height="25" VerticalAlignment="Top">
-            <MenuItem Header="Файл">
+        <Menu Height="25" VerticalAlignment="Top" Background="#FF62A2FF">
+            <MenuItem Header="Файл" Height="25" Width="72">
+                <MenuItem.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFBAFFE9" Offset="0"/>
+                        <GradientStop Color="#FFB1D1FF" Offset="1"/>
+                    </LinearGradientBrush>
+                </MenuItem.Background>
                 <MenuItem Header="Загрузить картинку" Click="OpenD_Click"></MenuItem>
                 <Separator/>
-                <MenuItem Header="Выйти" ></MenuItem>
+                <MenuItem Header="Выйти" Click="MenuItem_Click"></MenuItem>
             </MenuItem>
             <MenuItem Header="Рисунки" >
+                <MenuItem.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFBAFFE9" Offset="0"/>
+                        <GradientStop Color="#FFB1D1FF" Offset="1"/>
+                    </LinearGradientBrush>
+                </MenuItem.Background>
                 <MenuItem Header="Котик 1" Click="cat1_Click"></MenuItem>
                 <MenuItem Header="Котик 2" Click="cat2_Click"></MenuItem>
-                <MenuItem Header="Котик 3" ></MenuItem>
+                <MenuItem Header="Котик 3" Click="cat3_Click"></MenuItem>
             </MenuItem>
         </Menu>
         <Border x:Name="Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="389" Margin="0,30,0,0" VerticalAlignment="Top" Width="792">
